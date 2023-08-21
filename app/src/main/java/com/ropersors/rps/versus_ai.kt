@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.navigation.fragment.findNavController
 import com.ropersors.rps.databinding.FragmentVersusAiBinding
 
 class versus_ai : Fragment(R.layout.fragment_versus_ai) {
@@ -30,6 +31,10 @@ class versus_ai : Fragment(R.layout.fragment_versus_ai) {
         binding.defaultScissorCard.setOnClickListener {
             continue_game("scissors")
 //            Toast.makeText(activity?.applicationContext, player1.choice, Toast.LENGTH_SHORT).show()
+        }
+
+        binding.pauseButton?.setOnClickListener {
+            findNavController().navigate(versus_aiDirections.actionVersusAiToPauseScreenFragment())
         }
 
         return binding.root
