@@ -12,7 +12,6 @@ import com.ropersors.rps.databinding.FragmentMainmenuBinding
 
 class mainmenu : Fragment() {
     private lateinit var binding: FragmentMainmenuBinding
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -24,7 +23,6 @@ class mainmenu : Fragment() {
         binding.pvpCard.setOnClickListener {
             Toast.makeText(activity?.applicationContext, "Comming soon", Toast.LENGTH_LONG).show()
         }
-
         return binding.root
 
     }

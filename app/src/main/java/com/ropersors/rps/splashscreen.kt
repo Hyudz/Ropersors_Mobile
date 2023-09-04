@@ -16,7 +16,6 @@ class splashscreen : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentSplashscreenBinding.inflate(inflater,container,false)
-
         binding.intro.setOnClickListener {
             findNavController().navigate(splashscreenDirections.actionSplashscreenToMainmenu())
         }

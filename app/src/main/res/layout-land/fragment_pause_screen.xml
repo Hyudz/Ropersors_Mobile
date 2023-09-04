@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PauseScreenFragment">
+
+    <ImageView
+        android:id="@+id/board_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/board_background_description"
+        android:src="@drawable/snad"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/vignette"
+        android:contentDescription="@string/background_dim" />
+
+    <LinearLayout
+        android:layout_width="336dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="119dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="276dp"
+        android:layout_marginBottom="66dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="52dp">
+
+        <ImageView
+            android:layout_width="317dp"
+            android:layout_height="109dp"
+            android:src="@drawable/game_paused__text_"
+            android:contentDescription="@string/paused_game_indicator" />
+
+        <ImageButton
+            android:id="@+id/continue_button"
+            android:layout_width="201dp"
+            android:layout_height="43dp"
+            android:background="@null"
+            android:contentDescription="@string/continue_text"
+            android:scaleType="fitStart"
+            android:src="@drawable/resource_continue"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/restart_button"
+            android:layout_width="151dp"
+            android:layout_height="44dp"
+            android:background="@null"
+            android:contentDescription="@string/restart_text"
+            android:scaleType="fitStart"
+            android:src="@drawable/restart"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/menu_button"
+            android:layout_width="189dp"
+            android:layout_height="36dp"
+            android:background="@null"
+            android:contentDescription="@string/main_menu_text"
+            android:scaleType="fitStart"
+            android:src="@drawable/main_menu_text"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+    </LinearLayout>
+
+</RelativeLayout>

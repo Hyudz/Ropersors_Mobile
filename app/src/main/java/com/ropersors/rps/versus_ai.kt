@@ -22,15 +22,12 @@ class versus_ai : Fragment(R.layout.fragment_versus_ai) {
         binding = FragmentVersusAiBinding.inflate(inflater, container, false)
         binding.defaultRockCard.setOnClickListener {
             continue_game("rock")
-//            Toast.makeText(activity?.applicationContext, player1.choice, Toast.LENGTH_SHORT).show()
         }
         binding.defaultPaperCard.setOnClickListener {
             continue_game("paper")
-//            Toast.makeText(activity?.applicationContext, player1.choice, Toast.LENGTH_SHORT).show()
         }
         binding.defaultScissorCard.setOnClickListener {
             continue_game("scissors")
-//            Toast.makeText(activity?.applicationContext, player1.choice, Toast.LENGTH_SHORT).show()
         }
 
         binding.pauseButton?.setOnClickListener {

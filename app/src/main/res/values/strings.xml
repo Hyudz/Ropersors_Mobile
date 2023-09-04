@@ -14,5 +14,10 @@
     <string name="nameplate1">nameplate1</string>
     <string name="mainmenu_bg_description">This is the backgroud for this fragement</string>
     <string name="instruction_text">instruction</string>
+    <string name="background_dim">background dim</string>
+    <string name="paused_game_indicator">paused game indicator</string>
+    <string name="continue_text">continue text</string>
+    <string name="restart_text">restart text</string>
+    <string name="main_menu_text">main menu text</string>
 
 </resources>
